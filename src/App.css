@@ -1,0 +1,500 @@
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 10px;
+    z-index: 100;
+    background-color: #fff;
+    height: 8vh;
+    padding: 0 20px;
+    box-shadow: 0px 1px 2px gray;
+}
+
+.headerleft {
+    display: inline-flex;
+    gap: 0 10px;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.navlinks {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 0 18px;
+}
+
+.navlinks a {
+    font-size: medium;
+    color: #000;
+}
+
+.navlinks a.active {
+    border-bottom: 2px solid #000;
+}
+
+.navicons {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+.navicons i {
+    font-style: normal;
+    font-size: 1.3rem;
+}
+
+.menuicon,
+.searchicon {
+    display: none;
+}
+
+.searchbar {
+    max-width: 460px;
+    width: 100%;
+    height: 30px;
+    padding: 8px 6px;
+    font-size: small;
+}
+
+.searchbar:focus {
+    outline-color: rgb(30, 120, 238);
+}
+
+/*home*/
+.home {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('./assets/herobannner.PNG')no-repeat center center/cover;
+    color: #edede9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px 2px gray;
+}
+
+.hometext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: serif;
+}
+
+.hometext p {
+    width: 70%;
+    margin: 20px auto;
+}
+
+.hometext button {
+    width: 140px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #edede9;
+    color: #edede9;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.hometext button:hover {
+    background-color: #000;
+}
+
+.homecategorywrappper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 8px;
+}
+
+.homecategorybox {
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    background: #fafaf9;
+    border-radius: 10px;
+}
+
+.homecategorybox img {
+    width: 70%;
+    height: 70%;
+    object-position: center;
+}
+
+.smbanner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 4px 0;
+    gap: 10px;
+}
+
+.smbannerbox {
+    box-shadow: 0px 0px 2px gray;
+    width: 48%;
+    padding: 10px 0;
+}
+
+.smbannerbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+}
+
+.gender {
+    text-align: center;
+    background-color: #edede9;
+}
+
+.genderbox {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.genderbox button {
+    width: 200px;
+    height: 40px;
+    margin: 0 4px;
+    background-color: #edede9;
+    color: #000;
+}
+
+.genderbox button:hover,
+.genderbtn {
+    background-color: #000;
+    color: #edede9;
+}
+
+
+
+/*shoppage products*/
+
+.prowrapper {
+    padding: 20px 10px;
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    align-items: center;
+    gap: 10px 4px;
+}
+
+.probox {
+    width: 280px;
+    border: 1px solid #dadada;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.probox img {
+    width: 100%;
+    max-height: 276px;
+    background-color: #edede9;
+    transition: .8s ease-in;
+}
+
+.prowrapper .probox:hover.probox img {
+    transform: scalex(1.1);
+}
+
+.pagination {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.pagination button {
+    border: 0;
+    outline: 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: transparent;
+}
+
+/*sproductpage*/
+.spage {
+    display: flex;
+    padding: 10px;
+}
+
+.imgwrapper {
+    width: 35%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.spromoreimg {
+    width: 20%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.spromoreimg img {
+    width: 60px;
+    height: 70px;
+    background-color: #edede9;
+}
+
+.sproposter {
+    height: inherit;
+}
+
+.sproposter img {
+    background-color: #edede9;
+    width: 90%;
+    height: 90%;
+}
+
+.sprodetails {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 14px 0;
+    padding: 10px;
+}
+
+.sprodetails .spropath {
+    margin: 10px 0;
+}
+
+.spropath a {
+    color: gray;
+}
+
+.spropath i {
+    margin: 0 5px;
+    font-size: 0.7rem;
+}
+
+/*contract page*/
+.contractform {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #edede9;
+    padding: 10px;
+    box-shadow: 0px 0px 4px gray;
+}
+
+.contractformbody {
+    width: inherit;
+}
+
+.contractformbody div input,
+.contractformbody div textarea {
+    width: 100%;
+    padding: 10px 14px;
+    outline: 0;
+    border: 0;
+    margin: 10px 0;
+}
+
+.contractbtn {
+    width: 300px;
+    padding: 8px;
+    background-color: #000;
+    color: #edede9;
+    margin: 10px auto;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.socialicons div {
+    width: fit-content;
+    display: flex;
+    gap: 5px;
+    margin: 10px auto;
+}
+
+.socialicons div a {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #000;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #edede9;
+    transition: .4s ease-in;
+}
+
+.socialicons div a:hover {
+    color: #edede9;
+    background-color: #a0a0a0;
+    border: 0;
+}
+
+/*about page*/
+.flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+.flexcontent {
+    flex-basis: 48%;
+}
+
+.flexcontent .heading {
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.fleximage {
+    flex-basis: 30%;
+}
+
+.fleximage img {
+    width: 100%;
+}
+
+@media(max-width:768px) {
+    .navlinks {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: -50%;
+        width: 50vw;
+        height: 100vh;
+        align-items: start;
+        gap: 16px 0;
+        transition: all 0.7s ease-in-out;
+        background-color: #fff;
+        border-radius: 4px;
+        padding: 10px;
+    }
+
+    .navactive {
+        left: 0;
+    }
+
+    .navicons i {
+        margin: 4px;
+    }
+
+    .menuicon,
+    .searchicon {
+        display: block;
+    }
+
+    .searchbar {
+        display: none;
+    }
+
+    .searchactive {
+        display: block;
+        position: absolute;
+        width: 60%;
+        top: 100%;
+        right: 20px;
+        margin-top: 8px;
+
+    }
+
+    .smbanner .smbannerbox {
+        width: 95%;
+        border-left: 10px solid black;
+    }
+
+    .gender .genderbox button {
+        width: 80%;
+    }
+
+
+    /*sproduct*/
+    .spage {
+        display: block;
+    }
+
+    .spage .imgwrapper {
+        width: 70%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .imgwrapper .sproposter {
+        height: 70%;
+    }
+
+    .imgwrapper .sproposter img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .imgwrapper .spromoreimg {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .sprodetails {
+        gap: 20px 0;
+    }
+
+    .contractform {
+        width: 100%;
+    }
+
+    .contractbtn {
+        width: 100%;
+    }
+
+    .flexbox {
+        flex-direction: column-reverse;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .flexcontent .heading {
+        text-align: center;
+    }
+}
+
+@media(max-width:583px) {
+    .prowrapper {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .prowrapper .probox {
+        width: 90%;
+    }
+    .searchbar{
+        outline: none;
+    }
+}
+
+/*global*/
+.con-p {
+    padding: 20px 0;
+}
+
+.side-p {
+    padding: 20px;
+}
