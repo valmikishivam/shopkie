@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom";
-
+const apiurl =import.meta.env.VITE_API_URL;
 
 function RealetedProducts({ subcate }) {
     const [products, setProducts] = useState([])
@@ -8,7 +8,7 @@ function RealetedProducts({ subcate }) {
     useEffect(() => {
 
         const reletedPro = async () => {
-            const res = await fetch(`http://localhost:5050/api/v1/products/related?category=${subcate}`);
+            const res = await fetch(`${apiurl}/related?category=${subcate}`);
             const data = await res.json();
             setProducts(data.products);
 
