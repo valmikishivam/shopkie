@@ -9,8 +9,7 @@ const app= express();
 const port = process.env.PORT||3030;
 app.use(express.json());
 app.use(cors({
-    origin:process.env.FRONTEND_URL,
-    credentials:true
+    origin:process.env.FRONTEND_URL
 }));
 
 connectDb()
