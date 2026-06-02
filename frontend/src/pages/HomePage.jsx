@@ -1,5 +1,5 @@
-import banner1 from '../assets/smbanner.png'
-import banner2 from '../assets/smbanner2.png'
+import banner1 from '../assets/smbanner.PNG'
+import banner2 from '../assets/smbanner2.PNG'
 import hero from '../assets/hero.png'
 import { Link, useNavigate } from 'react-router-dom'
 const categories = [
