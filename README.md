@@ -6,12 +6,12 @@ A full-stack e-commerce web application built with the **MERN Stack** (MongoDB, 
 
 **Frontend:** https://shopkie.netlify.app 
 
-##Backend APIs:##
+##  Backend APIs
 
-*  **feed:** baseurl/shopkie/products?page=pageno
-*  **singleproduct:** baseurl/shopkie/products/id
-*  **relatedProducts:** baseurl/shopkie/related?category=categoryname
-*  ** searchproducts:** baseurl/shopkie/search?q=searchquery
+*  **feed:**  baseurl/shopkie/products?page=pageno
+*  **singleproduct:**  baseurl/shopkie/products/id
+*  **relatedProducts:**  baseurl/shopkie/related?category=categoryname
+*  **searchproducts:**  baseurl/shopkie/search?q=searchquery
 
 
 ## 🚀 Deployment Tech
