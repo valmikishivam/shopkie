@@ -61,7 +61,7 @@ const SingleProduct = () => {
                             }
                         </p>
                         <div>
-                            Quantity : <input type="number" defaultValue={1} minLength={0} maxLength={5} className='p-2 outline-none border-2 border-gray-500' />
+                            Quantity : <input type="number" defaultValue={1} min={1} max={5} className='p-2 outline-none border-2 border-gray-500' />
                         </div>
                         <div className='flex flex-wrap gap-x-2'>
                             <button className='px-4 py-2 bg-orange-600 text-white font-semibold'
