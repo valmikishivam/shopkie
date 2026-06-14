@@ -47,7 +47,7 @@ const ShopPage = () => {
           productData && productData.length > 0 ? productData.map(pro => (
             <ProductCard data={pro} key={pro.uid} />
           )) : (
-            <div className='col-span-2 md:col-span-3 lg:col-span-4'>
+            <div className={loading?'hidden':'col-span-2 md:col-span-3 lg:col-span-4'}>
               <h1 className='text-center text-xl'>No products found</h1>
             </div>
           )
