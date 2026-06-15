@@ -1,6 +1,6 @@
 import banner1 from '../assets/smbanner.PNG'
 import banner2 from '../assets/smbanner2.PNG'
-import hero from '../assets/hero.PNG'
+import hero from '../assets/Hero.png'
 import { Link, useNavigate } from 'react-router-dom'
 const categories = [
   {
